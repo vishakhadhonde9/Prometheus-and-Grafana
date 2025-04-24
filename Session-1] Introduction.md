@@ -27,5 +27,36 @@
       - copy ec2 public IP and paste in browser with port no 9090
       - now you should see prometheus dashboard
       
-      #sudo nano  /etc/prometheus/prometheus.yml
+      
+# /etc/prometheus/prometheus.yml -
 
+                rule_files:
+                    - "rules.yml"
+                  # - "second_rules.yml"
+                
+                # A scrape configuration containing exactly one endpoint to scrape:
+                # Here it's Prometheus itself.
+                scrape_configs:
+                  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+                  - job_name: "prometheus"
+                
+                    # metrics_path defaults to '/metrics'
+                    # scheme defaults to 'http'.
+                
+                    static_configs:
+                      - targets: ["localhost:9090"]
+                  - job_name: "node"
+                
+                    # metrics_path defaults to '/metrics'
+                    # scheme defaults to 'http'.
+                
+                    static_configs:
+                      - targets: ["localhost:9100"]
+                  - job_name: "app"
+                
+                    # metrics_path defaults to '/metrics'
+                    # scheme defaults to 'http'.
+                
+                    static_configs:
+                      - targets: ["localhost:5000"]
+                
