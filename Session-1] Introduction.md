@@ -7,9 +7,6 @@
 # Prometheus Configuration -
 
 
-# prometheusinstallation
-
-
         sudo tee /etc/yum.repos.d/prometheus.repo <<EOF
         [prometheus]
         name=Prometheus
