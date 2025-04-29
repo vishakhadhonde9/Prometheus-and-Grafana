@@ -90,4 +90,4 @@
       # - "second_rules.yml"
 
 
-- sudo systemctl restart prometheus nodeexporter
+- sudo systemctl restart prometheus node_exporter
