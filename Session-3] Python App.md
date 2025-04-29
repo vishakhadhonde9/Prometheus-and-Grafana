@@ -46,10 +46,10 @@
         
   ## Installation for application -    
       
-   sudo yum install python3-pip
-   pip3 install prometheus_client
-   pip install flask
-   python3 app.py --> to run file
+  - sudo yum install python3-pip
+  - pip3 install prometheus_client
+  - pip install flask
+  - python3 app.py --> to run file
 
 
 
