@@ -1,4 +1,4 @@
-# PromoQL -
+# PromQL -
 - PromQL stands for Prometheus Query Language.
 - It is used to query time-series data stored in Prometheus.
 
