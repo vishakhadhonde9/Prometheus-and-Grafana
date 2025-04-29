@@ -73,3 +73,21 @@
           summary: "High CPU Usage detected (instance {{ $labels.instance }})"
           description: "CPU usage is above 1% for 1 minutes on instance {{ $labels.instance }}"
 
+
+## Change configuration File for Rules -
+
+
+    # Alertmanager configuration
+    alerting:
+      alertmanagers:
+        - static_configs:
+            - targets:
+               - alertmanager:9093
+    
+    # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+    rule_files:
+        - "rules.yml"
+      # - "second_rules.yml"
+
+
+- sudo systemctl restart prometheus nodeexporter
