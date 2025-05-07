@@ -35,10 +35,10 @@
             EOF
 
 
-    sudo yum install grafana -y
-    sudo systemctl start grafana-server
-    sudo systemctl enable grafana-server
-    sudo systemctl status grafana-server
+          sudo yum install grafana -y
+          sudo systemctl start grafana-server
+          sudo systemctl enable grafana-server
+          sudo systemctl status grafana-server
 
 
 - copy public ip and paste on broswer
