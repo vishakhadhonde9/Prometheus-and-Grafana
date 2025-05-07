@@ -1,5 +1,5 @@
 # Dashboard -
-
+Dashboard os interface through which you can visualize your data.
 
 
 
