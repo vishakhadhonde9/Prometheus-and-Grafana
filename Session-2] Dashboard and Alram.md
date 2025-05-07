@@ -36,14 +36,14 @@ Dashboard is interface through which you can visualize your data.
 
 - sudo vi /etc/grafana/grafana.ini
 
-[smtp]
-enabled = true
-host = smtp.gmail.com:587
-user = your_email@gmail.com
-password = your_gmail_app_password
-from_address = your_email@gmail.com
-from_name = Grafana Alerts
-ehlo_identity = localhost
+        [smtp]
+        enabled = true
+        host = smtp.gmail.com:587
+        user = your_email@gmail.com
+        password = your_gmail_app_password
+        from_address = your_email@gmail.com
+        from_name = Grafana Alerts
+        ehlo_identity = localhost
 
 
 - sudo systemctl restart grafana-server
