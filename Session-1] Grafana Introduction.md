@@ -46,7 +46,9 @@
       http://pub-ip:3000
 
 
-
+- Default Grafana Username and Password -
+      - admin
+      - admin
 
 
 
