@@ -23,9 +23,10 @@
       - rpm -qi prometheus2
       - sudo systemctl start prometheus node_exporter
       - systemctl status prometheus.service node_exporter.service
-      - add port 9090 in security group
-      - copy ec2 public IP and paste in browser with port no 9090
-      - now you should see prometheus dashboard
+     
+- add port 9090 and 9100 in security group
+- copy ec2 public IP and paste in browser with port no 9090
+- now you should see prometheus dashboard
       
       
 # /etc/prometheus/prometheus.yml -
